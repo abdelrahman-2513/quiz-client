@@ -12,7 +12,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <Sidebar setMobileOpen={setMobileOpen} mobileOpen={mobileOpen} />
             <Header setMobileOpen={setMobileOpen} />
 
-            <Box component="main" sx={{ flexGrow: 1, p: 3, mt: 8 }}>
+            <Box component="main" sx={{ flexGrow: 1,  mt: 8,minHeight: "100vh" }}>
                 {children}
             </Box>
         </Box>
